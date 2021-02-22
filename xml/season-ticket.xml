@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<season-tickets>
+    <season-ticket>
+        <duration month="1"/>
+        <visit-time time="All day"/>
+    </season-ticket>
+    <season-ticket>
+        <duration month="1"/>
+        <visit-time time="Until 16:00"/>
+    </season-ticket>
+    <season-ticket>
+        <duration month="3"/>
+        <visit-time time="Until 16:00"/>
+    </season-ticket>
+    <season-ticket>
+        <duration month="6"/>
+        <visit-time time="Until 16:00"/>
+    </season-ticket>
+</season-tickets>

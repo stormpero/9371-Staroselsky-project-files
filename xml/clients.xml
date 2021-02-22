@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<clients>
+    <!-- id - номер клубной карты клиента -->
+    <client id="000567"> 
+        <!-- Общая информация о клиенте -->
+        <client-information>
+            <photo> photo url </photo>
+            <fullname>
+                <surname>Иванов</surname>
+                <name>Иван</name>
+                <patronymic>Иванович</patronymic>
+            </fullname>
+            <birthdate>13.08.1998</birthdate>
+            <gender>М</gender>
+            <age>22</age>
+            <phone-numbers><!--num - нумерация телефонов-->
+                <number num="1">+7 (921) 929-65-45</number>
+                <number num="2">+7 (911) 156-44-97</number> 
+            </phone-numbers>
+            <emails>
+                <email num="1">ivanov@yandex.ru</email>
+                <email num="2">ivan.ivanov@mail.ru</email>
+            </emails>
+            <address>Спб, проспект Королёва, 19</address>
+            <passport>40 15 245412</passport>
+            <season-ticket-type>
+                <duration month="6"/>
+                <visit-time time="All day"/>
+            </season-ticket-type>
+            <contract-number>5723218</contract-number>
+            <!-- id - номер клубной карты инструктора -->
+            <instructor id="000145">
+                <surname>Волков</surname>
+                <name>Дмитрий</name>
+                <patronymic>Алексеевич</patronymic>
+            </instructor>
+        </client-information>
+        <!--Список тренировок клиента -->
+        <training-list>
+            <training num="1">
+                <instructor id="000145">
+                    <surname>Волков</surname>
+                    <name>Дмитрий</name>
+                    <patronymic>Алексеевич</patronymic>
+                </instructor>
+                <training-date>
+                    <data>26.02.2020</data>
+                    <time>16:00</time>
+                </training-date>
+                <training-type>Обычная</training-type>
+                <status>Проведена</status>
+            </training>
+            <training num="2">
+                <instructor id="000145">
+                    <surname>Волков</surname>
+                    <name>Дмитрий</name>
+                    <patronymic>Алексеевич</patronymic>
+                </instructor>
+                <training-date>
+                    <data>08.03.2020</data>
+                    <time>18:00</time>
+                </training-date>
+                <training-type>Комплексная</training-type>
+                <status>Запланирована</status>
+            </training>
+        </training-list>
+        <!--Список посещений клиента -->
+        <visits-list>
+            <visit num="1">
+                <entry-date>
+                    <data>26.02.2020</data>
+                    <time>15:40</time>
+                </entry-date>                
+                <exit-data>
+                    <data>26.02.2020</data>
+                    <time>17:25</time>
+                </exit-data>
+                <duration>01:45</duration>
+            </visit>
+            <visit num="2">
+                <entry-date>
+                    <data>04.03.2020</data>
+                    <time>15:00</time>
+                </entry-date>                
+                <exit-data>
+                    <data>04.03.2020</data>
+                    <time>16:30</time>
+                </exit-data>
+                <duration>01:30</duration>
+            </visit>
+            <visit num="3">
+                <entry-date>
+                    <data>08.03.2020</data>
+                    <time>17:55</time>
+                </entry-date>                
+                <exit-data>
+                    <data>08.03.2020</data>
+                    <time>19:20</time>
+                </exit-data>
+                <duration>01:25</duration>
+            </visit>
+        </visits-list>
+    </client>
+    
+    <client id="000568"> 
+        <!-- Общая информация о клиенте -->
+        <client-information>
+            <photo> photo url </photo>
+            <fullname>
+                <surname>Макарова</surname>
+                <name>Диана</name>
+                <patronymic>Дмитриевна</patronymic>
+            </fullname>
+            <birthdate>07.04.1996</birthdate>
+            <gender>Ж</gender>
+            <age>25</age>
+            <phone-numbers><!--num - нумерация телефонов-->
+                <number num="1">+7 (921) 768-42-12</number>
+            </phone-numbers>
+            <emails>
+                <email num="1">diana.makarova@yandex.ru</email>
+            </emails>
+            <address>Спб, Гаккелевская улица, 26</address>
+            <passport>40 15 632125</passport>
+            <season-ticket-type>
+                <duration month="3"/>
+                <visit-time time="Until 16:00"/>
+            </season-ticket-type>
+            <contract-number>5433852</contract-number>
+            <!-- id - номер клубной карты инструктора -->
+            <instructor id="000111">
+                <surname>Крылов</surname>
+                <name>Алексей</name>
+                <patronymic>Антонович</patronymic>
+            </instructor>
+        </client-information>
+        <!--Список тренировок клиента -->
+        <training-list>
+            <training num="1">
+                <instructor id="000145">
+                    <surname>Крылов</surname>
+                    <name>Алексей</name>
+                    <patronymic>Антонович</patronymic>
+                </instructor>
+                <training-date>
+                    <data>27.02.2020</data>
+                    <time>17:00</time>
+                </training-date>
+                <training-type>Обычная</training-type>
+                <status>Проведена</status>
+            </training>            
+        </training-list>
+        <!--Список посещений клиента -->
+        <visits-list>
+            <visit num="1">
+                <entry-date>
+                    <data>27.02.2020</data>
+                    <time>12:45</time>
+                </entry-date>                
+                <exit-data>
+                    <data>27.02.2020</data>
+                    <time>14:20</time>
+                </exit-data>
+                <duration>01:35</duration>
+            </visit>
+            <visit num="2">
+                <entry-date>
+                    <data>12.03.2020</data>
+                    <time>11:00</time>
+                </entry-date>                
+                <exit-data>
+                    <data>12.03.2020</data>
+                    <time>12:30</time>
+                </exit-data>
+                <duration>01:30</duration>
+            </visit>
+        </visits-list>
+    </client>
+</clients>

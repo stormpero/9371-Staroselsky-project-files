@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<training-schedule>
+<year num="2020">
+    <month num="02">
+        <training num="1">
+            <client id="000567">
+                <surname>Иванов</surname>
+                <name>Иван</name>
+                <patronymic>Иванович</patronymic>
+            </client>
+            <instructor id="000145">
+                <surname>Волков</surname>
+                <name>Дмитрий</name>
+                <patronymic>Алексеевич</patronymic>
+            </instructor>
+            <training-date>
+                <data>26.02.2020</data>
+                <time>16:00</time>
+            </training-date>
+            <training-type>Обычная</training-type>
+            <status>Проведена</status>
+        </training>
+        <training num="2">
+            <client id="000568">
+                <surname>Макарова</surname>
+                <name>Диана</name>
+                <patronymic>Дмитриевна</patronymic>
+            </client>
+            <instructor id="000145">
+                <surname>Крылов</surname>
+                <name>Алексей</name>
+                <patronymic>Антонович</patronymic>
+            </instructor>
+            <training-date>
+                <data>27.02.2020</data>
+                <time>17:00</time>
+            </training-date>
+            <training-type>Обычная</training-type>
+            <status>Проведена</status>
+        </training>  
+    </month>
+    <month num="03">
+        <training num="1">
+            <client id="000567">
+                <surname>Иванов</surname>
+                <name>Иван</name>
+                <patronymic>Иванович</patronymic>
+            </client>
+            <instructor id="000145">
+                <surname>Волков</surname>
+                <name>Дмитрий</name>
+                <patronymic>Алексеевич</patronymic>
+            </instructor>
+            <training-date>
+                <data>08.03.2020</data>
+                <time>18:00</time>
+            </training-date>
+            <training-type>Комплексная</training-type>
+            <status>Запланирована</status>
+        </training>
+    </month>
+</year>
+
+</training-schedule>
