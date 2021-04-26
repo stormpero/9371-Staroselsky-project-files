@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
+<!DOCTYPE clients[
+<!ELEMENT clients (client*)>
+<!ELEMENT client (client-information,training-list,visits-list)>
+<!ATTLIST client id CDATA #REQUIRED>
+<!ELEMENT client-information (photo,fullname,birthdate,gender,age,phone-numbers,emails,address,passport,season-ticket,contract-number,instructor?)>
+<!ELEMENT fullname (surname,name,patronymic)>
+<!ELEMENT phone-numbers (number+)>
+<!ATTLIST number num CDATA #IMPLIED>
+<!ELEMENT emails (email+)>
+<!ATTLIST email num CDATA #IMPLIED>
+<!ELEMENT training-list (training*)>
+<!ELEMENT training (instructor,training-date,training-type,status)>
+<!ATTLIST training num CDATA #REQUIRED>
+<!ELEMENT training-date (data,time)>
+<!ELEMENT visits-list (visit*)>
+<!ELEMENT visit (entry-date,exit-data,duration)>
+<!ATTLIST visit num CDATA #REQUIRED>
+<!ELEMENT entry-date (data,time)>
+<!ELEMENT exit-data (data,time)>
+<!ELEMENT photo (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT patronymic (#PCDATA)>
+<!ELEMENT birthdate (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT passport (#PCDATA)>
+<!ELEMENT season-ticket EMPTY>
+<!ATTLIST season-ticket id CDATA #REQUIRED>
+<!ELEMENT contract-number (#PCDATA)>
+<!ELEMENT instructor EMPTY>
+<!ATTLIST instructor id CDATA #IMPLIED>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT training-type (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+]>
 <clients>
     <!-- id - номер клубной карты клиента -->
     <client id="000567"> 
         <!-- Общая информация о клиенте -->
         <client-information>
-            <photo> photo url </photo>
+            <photo> img/000567.png </photo>
             <fullname>
                 <surname>Иванов</surname>
                 <name>Иван</name>
@@ -24,26 +64,15 @@
             </emails>
             <address>Спб, проспект Королёва, 19</address>
             <passport>40 15 245412</passport>
-            <season-ticket-type>
-                <duration month="6"/>
-                <visit-time time="All day"/>
-            </season-ticket-type>
+            <season-ticket id="1"/>             
             <contract-number>5723218</contract-number>
             <!-- id - номер клубной карты инструктора -->
-            <instructor id="000145">
-                <surname>Волков</surname>
-                <name>Дмитрий</name>
-                <patronymic>Алексеевич</patronymic>
-            </instructor>
+            <instructor id="000145"/>            
         </client-information>
         <!--Список тренировок клиента -->
         <training-list>
             <training num="1">
-                <instructor id="000145">
-                    <surname>Волков</surname>
-                    <name>Дмитрий</name>
-                    <patronymic>Алексеевич</patronymic>
-                </instructor>
+                <instructor id="000145"/>
                 <training-date>
                     <data>26.02.2020</data>
                     <time>16:00</time>
@@ -52,11 +81,7 @@
                 <status>Проведена</status>
             </training>
             <training num="2">
-                <instructor id="000145">
-                    <surname>Волков</surname>
-                    <name>Дмитрий</name>
-                    <patronymic>Алексеевич</patronymic>
-                </instructor>
+                <instructor id="000145"/>
                 <training-date>
                     <data>08.03.2020</data>
                     <time>18:00</time>
@@ -106,7 +131,7 @@
     <client id="000568"> 
         <!-- Общая информация о клиенте -->
         <client-information>
-            <photo> photo url </photo>
+            <photo> img/000568.png </photo>
             <fullname>
                 <surname>Макарова</surname>
                 <name>Диана</name>
@@ -123,26 +148,15 @@
             </emails>
             <address>Спб, Гаккелевская улица, 26</address>
             <passport>40 15 632125</passport>
-            <season-ticket-type>
-                <duration month="3"/>
-                <visit-time time="Until 16:00"/>
-            </season-ticket-type>
+            <season-ticket id="3"/>
             <contract-number>5433852</contract-number>
             <!-- id - номер клубной карты инструктора -->
-            <instructor id="000111">
-                <surname>Крылов</surname>
-                <name>Алексей</name>
-                <patronymic>Антонович</patronymic>
-            </instructor>
+            <instructor id="000111"/>
         </client-information>
         <!--Список тренировок клиента -->
         <training-list>
             <training num="1">
-                <instructor id="000145">
-                    <surname>Крылов</surname>
-                    <name>Алексей</name>
-                    <patronymic>Антонович</patronymic>
-                </instructor>
+                <instructor id="000145"/>
                 <training-date>
                     <data>27.02.2020</data>
                     <time>17:00</time>

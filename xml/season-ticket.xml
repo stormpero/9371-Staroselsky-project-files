@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
+<!DOCTYPE season-tickets[
+<!ELEMENT season-tickets (season-ticket*)>
+<!ELEMENT season-ticket (duration,visit-time)>
+<!ATTLIST season-ticket id CDATA #REQUIRED>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT visit-time (#PCDATA)>
+]>
 <season-tickets>
-    <season-ticket>
-        <duration month="1"/>
-        <visit-time time="All day"/>
+    <season-ticket id="1">
+        <duration> 1 month </duration>
+        <visit-time> All day </visit-time>      
     </season-ticket>
-    <season-ticket>
-        <duration month="1"/>
-        <visit-time time="Until 16:00"/>
+    <season-ticket id="2">
+        <duration>1 month</duration>
+        <visit-time> Until 16:00 </visit-time>     
     </season-ticket>
-    <season-ticket>
-        <duration month="3"/>
-        <visit-time time="Until 16:00"/>
+    <season-ticket id="3">
+        <duration>3 month</duration>
+        <visit-time> All day </visit-time>     
     </season-ticket>
-    <season-ticket>
-        <duration month="6"/>
-        <visit-time time="Until 16:00"/>
+    <season-ticket id="4">
+        <duration>3 month</duration>
+        <visit-time> Until 16:00 </visit-time>     
+    </season-ticket>
+    <season-ticket id="5">
+        <duration>6 month</duration>
+        <visit-time> Until 16:00 </visit-time>     
     </season-ticket>
 </season-tickets>

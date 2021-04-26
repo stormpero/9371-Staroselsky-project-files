@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xml>
+<!DOCTYPE training-schedule[
+<!ELEMENT training-schedule (year*)>
+<!ELEMENT year (month*)>
+<!ATTLIST year num CDATA #REQUIRED>
+<!ELEMENT month (training*)>
+<!ATTLIST month num CDATA #REQUIRED>
+<!ELEMENT training (client,instructor,training-date,training-type,status)>
+<!ATTLIST training num CDATA #REQUIRED>
+<!ELEMENT training-date (data,time)>
+<!ELEMENT client (#PCDATA)>
+<!ATTLIST client id CDATA #REQUIRED>
+<!ELEMENT instructor (#PCDATA)>
+<!ATTLIST instructor id CDATA #REQUIRED>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT training-type (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+]>
 <training-schedule>
 <year num="2020">
     <month num="02">
         <training num="1">
-            <client id="000567">
-                <surname>Иванов</surname>
-                <name>Иван</name>
-                <patronymic>Иванович</patronymic>
-            </client>
-            <instructor id="000145">
-                <surname>Волков</surname>
-                <name>Дмитрий</name>
-                <patronymic>Алексеевич</patronymic>
-            </instructor>
+            <client id="000567"/>
+            <instructor id="000145"/>
             <training-date>
                 <data>26.02.2020</data>
                 <time>16:00</time>
@@ -22,16 +31,8 @@
             <status>Проведена</status>
         </training>
         <training num="2">
-            <client id="000568">
-                <surname>Макарова</surname>
-                <name>Диана</name>
-                <patronymic>Дмитриевна</patronymic>
-            </client>
-            <instructor id="000145">
-                <surname>Крылов</surname>
-                <name>Алексей</name>
-                <patronymic>Антонович</patronymic>
-            </instructor>
+            <client id="000568"/>
+            <instructor id="000145"/>
             <training-date>
                 <data>27.02.2020</data>
                 <time>17:00</time>
@@ -42,16 +43,8 @@
     </month>
     <month num="03">
         <training num="1">
-            <client id="000567">
-                <surname>Иванов</surname>
-                <name>Иван</name>
-                <patronymic>Иванович</patronymic>
-            </client>
-            <instructor id="000145">
-                <surname>Волков</surname>
-                <name>Дмитрий</name>
-                <patronymic>Алексеевич</patronymic>
-            </instructor>
+            <client id="000567"/>
+            <instructor id="000145"/>
             <training-date>
                 <data>08.03.2020</data>
                 <time>18:00</time>
