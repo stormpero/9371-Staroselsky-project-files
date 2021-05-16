@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/season-tickets.xsl"?>
 <!DOCTYPE season-tickets[
 <!ELEMENT season-tickets (season-ticket*)>
 <!ELEMENT season-ticket (duration,visit-time)>

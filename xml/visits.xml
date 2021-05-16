@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/visits.xsl"?>
+<!DOCTYPE visit-list[
+<!ELEMENT visit-list (visit*)>
+<!ELEMENT visit (client-id, entry-date,exit-data,duration)>
+<!ELEMENT client-id EMPTY>
+<!ATTLIST client-id id CDATA #REQUIRED>
+<!ELEMENT entry-date (data,time)>
+<!ELEMENT exit-data (data,time)>
+<!ELEMENT data (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+]>
+
+<visit-list>
+    <visit>
+        <client-id id="000567"/>
+        <entry-date>
+            <data>26.02.2020</data>
+            <time>15:40</time>
+        </entry-date>                
+        <exit-data>
+            <data>26.02.2020</data>
+            <time>17:25</time>
+        </exit-data>
+        <duration>01:45</duration>
+    </visit>
+    <visit>
+        <client-id id="000567"/>
+        <entry-date>
+            <data>04.03.2020</data>
+            <time>15:00</time>
+        </entry-date>                
+        <exit-data>
+            <data>04.03.2020</data>
+            <time>16:30</time>
+        </exit-data>
+        <duration>01:30</duration>
+    </visit>
+    <visit>
+        <client-id id="000568"/>
+        <entry-date>
+            <data>08.03.2020</data>
+            <time>17:55</time>
+        </entry-date>                
+        <exit-data>
+            <data>08.03.2020</data>
+            <time>19:20</time>
+        </exit-data>
+        <duration>01:25</duration>
+    </visit>
+</visit-list>
